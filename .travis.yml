@@ -7,3 +7,9 @@ install:
   - pip install -r requirements.txt
 script:
   - python nasdaq.py
+notifications:
+  email:
+    recipients:
+      - weixc123@gmail.com
+    on_success: always # default: change
+    on_failure: always # default: always
